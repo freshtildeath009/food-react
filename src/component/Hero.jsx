@@ -13,6 +13,7 @@ const Hero = () => {
                         <Button />
                     </div>
                 </div>
+                <br />
                 <div className='right-container'>
                     <img id='hero-image' className='rotate' src="./images/hero.png" alt="" />
                 </div>
@@ -35,13 +36,14 @@ const HeroComponent = styled.section`
     width: 100%;
     color: var(--fc-100);
     font-family: var(--ff-general);
+    overflow-y: hidden;
     
         .content-container{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
-            width: 90%;
+            margin: 0 3rem;
             background: rgba(24, 26, 27, 0.8);
         }   
 
@@ -49,7 +51,7 @@ const HeroComponent = styled.section`
             display: center;
             justify-content: flex-start;
             align-items: center;
-            margin: 0 1rem;
+            margin: 0 2rem;
             width: 100%;
         }
 
@@ -66,7 +68,7 @@ const HeroComponent = styled.section`
 
         .button-container{
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
         
@@ -121,11 +123,15 @@ const HeroComponent = styled.section`
         }
 
         .right-container{
-            min-width: 250px;
-            min-height: 250px;
+            min-width: 230px;
+            min-height: 230px;
             margin: 0 2rem;
             padding-right: 0rem;
-        } 
+        }
+        
+        .button-container{
+            justify-content: center;
+        }
     }   
 
     @media (max-width: 991px) {
@@ -133,5 +139,37 @@ const HeroComponent = styled.section`
         #paragraph{
             font-size: var(--fs-0-8);
         }
+    } 
+
+    @media (max-width: 991px) {
+        height: auto;
+        #paragraph{
+            font-size: var(--fs-0-8);
+        }
+    } 
+    
+    @media (max-width: 575px) {
+        .content-container{
+            margin: 0 2rem;
+        }  
+
+        .left-container{
+
+            margin: 0 1.5rem;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .content-container{
+            margin: 0 1rem;
+        } 
+
+        .left-container{
+            margin: 0 1rem;
+        }
+        #title{
+            font-size: calc(0.7rem + 3vw);
+        }
+
     }   
 `

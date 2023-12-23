@@ -1,4 +1,5 @@
 import React from 'react'
+import About from '../component/About'
 import Hero from "../component/Hero"
 import Service from '../component/Service'
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
         <>
             <Hero />
             <Service />
+            <About />
         </>
     )
 }

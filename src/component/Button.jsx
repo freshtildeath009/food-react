@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Button = () => {
     return (
         <ButtonComponent>
-            <button id='btn'>BOOK A TABLE &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+            <button id='btn'>BOOK A TABLE &nbsp;<i className="fa-solid fa-arrow-right"></i></button>
         </ButtonComponent>
     )
 }
@@ -25,6 +25,14 @@ const ButtonComponent = styled.div`
             background: var(--bg-100);
             font-family: var(--ff-general);
             letter-spacing: var(--ls-100);
+            transition: ease-in-out 0.5s;
+        }
+
+        @media (max-width: 567px) {
+            #btn{
+                padding: 0.775rem 0.75rem;
+                font-size: var(--fs-0-8);
+            }
         }
     
 `

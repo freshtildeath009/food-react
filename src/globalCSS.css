@@ -2,7 +2,7 @@
 :root {
   /* Font Family */
   --ff-general: 'Poppins', sans-serif;
-
+  --ff-cursive: 'Pacifico', cursive;
   /* Font Size */
   --fs-4: 4rem;
   --fs-3: 3rem;
@@ -24,6 +24,7 @@
   /* Text Color */
   --fc-100: rgb(238, 233, 233);
   --fc-200: rgba(218, 165, 32, 1);
+  --fc-300: rgba(24, 26, 27, 0.8);
   /* Background Color */
   --bg-200: rgba(24, 26, 27, 1);
   --bg-100: rgba(218, 165, 32, 1);

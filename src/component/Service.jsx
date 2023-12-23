@@ -47,7 +47,7 @@ const ServicesSection = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 5rem 3rem;
+            margin: 5rem 2rem;
         }
 
         .service-container{
@@ -98,7 +98,7 @@ const ServicesSection = styled.section`
                 "item1 item2"
                 "item3 item4";
                 gap: 1rem;
-                margin: 5rem 5rem;
+                margin: 5rem 2rem;
             }
 
             .item-1{
@@ -131,6 +131,12 @@ const ServicesSection = styled.section`
 
             #service-paragraph{
                 font-size: var(--fs-0-8);
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .content-container{
+                margin: 5rem 0rem;
             }
         }
 `
