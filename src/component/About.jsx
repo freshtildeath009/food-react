@@ -70,7 +70,8 @@ const AboutSection = styled.section`
         .big-photo,
         .small-photo{
             height: 100%;
-            width: 100%;    
+            width: 100%;
+            border-radius: 5px;    
         }
 
         .item2-photo-container{
@@ -119,9 +120,9 @@ const AboutSection = styled.section`
             display: inline-block;
             justify-content: center;
             align-items: center;
-            width: 100px;
+            width: 50px;
             height: 2px;
-            background: rgba(218, 165, 32, 1);
+            background: var(--bg-100);
             margin-left: 1rem;
         }
 
@@ -166,7 +167,7 @@ const AboutSection = styled.section`
 
         .stats-span{
             font-size: var(--fs-1);
-            font-weight: var(--fw-900);
+            font-weight: var(--fw-700);
         }
 
         #stats-info{

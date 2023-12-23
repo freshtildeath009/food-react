@@ -37,6 +37,8 @@ const HeroComponent = styled.section`
     color: var(--fc-100);
     font-family: var(--ff-general);
     overflow-y: hidden;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 20px 1px black;
     
         .content-container{
             display: flex;
@@ -45,6 +47,7 @@ const HeroComponent = styled.section`
             height: 100%;
             margin: 0 3rem;
             background: rgba(24, 26, 27, 0.8);
+            box-shadow: 1px 1px 20px 1px black;
         }   
 
         .left-container{
@@ -151,6 +154,7 @@ const HeroComponent = styled.section`
     @media (max-width: 575px) {
         .content-container{
             margin: 0 2rem;
+            padding: 5rem 0;
         }  
 
         .left-container{

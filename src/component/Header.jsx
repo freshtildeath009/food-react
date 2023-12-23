@@ -17,6 +17,9 @@ const Header = () => {
                     <li><Link to="/menu">MENU</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
                 </ul>
+                <div className='menu-container'>
+                    <i id='menu' className="fa-solid fa-bars"></i>
+                </div>
             </nav>
         </HeaderNav>
     )
@@ -43,26 +46,26 @@ const HeaderNav = styled.header`
             border-radius: 0 0 5px 5px;
             z-index: 1;
             
-                .left-container{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: 5rem; 
-                    
-                        #logo{
-                            font-size: calc(1rem + 2.5vw);
-                            font-weight: 900;
-                            color: var(--fc-200);
-                            overflow-y: hidden;
-                        }
+        }
+        
+        .left-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 3rem; 
+        }
+        #logo{
+            font-size: calc(1rem + 2.5vw);
+            font-weight: 900;
+            color: var(--fc-200);
+            overflow-y: hidden;
+        }
 
-                        #text-logo{
-                            font-size: calc(1rem + 2.5vw);
-                            font-weight: var(--fw-900);
-                            color: var(--fc-200);
-                            overflow-y: hidden;
-                        }
-                }
+        #text-logo{
+            font-size: calc(1rem + 2.5vw);
+            font-weight: var(--fw-900);
+            color: var(--fc-200);
+            overflow-y: hidden;
         }
 
         .right-container{
@@ -73,13 +76,71 @@ const HeaderNav = styled.header`
             font-weight: var(--fw-700);
             gap: 1rem;
             margin-right: 5rem;
-
-                a{
-                    font-size: var(--fs-1);
-                    font-weight: var(--fw-600);
-                    color: var(--fc-200);
-                }
+        }
+    
+        a{
+            font-size: var(--fs-1);
+            font-weight: var(--fw-600);
+            color: var(--fc-200);
+        }
+        
+        .menu-container{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5rem;
         }
 
+        #menu{
+            overflow-y: hidden;
+            font-size: calc(0.9rem + 2vw);
+        }
         
+        @media (max-width: 991px){
+            .menu-container{
+                display: block;
+                justify-content: center;
+                align-items: center;
+                margin-right: 5rem;
+            }
+            .right-container{
+                display: none;
+            }
+
+            .menu-container{
+                margin-right: 3rem;
+            }
+        }
+
+        @media (max-width: 768px){
+            .left-container{
+                margin-left: 3rem; 
+            }
+
+            .menu-container{
+                margin-right: 3rem;
+            }
+        }
+
+        @media (max-width: 575px){
+            .left-container{
+                margin-left: 2rem; 
+            }
+
+            .menu-container{
+                margin-right: 2rem;
+            }
+        }
+        
+        @media (max-width: 320px){
+            .left-container{
+                margin-left: 1rem; 
+            }
+
+            .menu-container{
+                margin-right: 1rem;
+            }
+        }
+
+    
 `
