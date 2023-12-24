@@ -65,6 +65,7 @@ const ServicesSection = styled.section`
             background: var(--bg-100);
             color: var(--fc-100);
             border-radius: 5px;
+            box-shadow: var(--box-shadow);
             #service-icon{
                 color: var(--fc-100);
             }

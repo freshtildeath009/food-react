@@ -38,7 +38,7 @@ const HeroComponent = styled.section`
     font-family: var(--ff-general);
     overflow-y: hidden;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 0 20px 1px black;
+    box-shadow: var(--box-shadow);
     
         .content-container{
             display: flex;
