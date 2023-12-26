@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage"
 import HomePage from "./pages/HomePage"
 import MenuPage from "./pages/MenuPage"
 import ServicesPage from "./pages/ServicesPage"
+import Team from "./pages/TeamPage"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/service" element={<ServicesPage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </BrowserRouter>
     </>

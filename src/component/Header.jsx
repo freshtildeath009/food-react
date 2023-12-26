@@ -16,6 +16,7 @@ const Header = () => {
                     <li><Link to="/service">SERVICE</Link></li>
                     <li><Link to="/menu">MENU</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
+                    <li><Link to="/team">TEAM</Link></li>
                 </ul>
                 <div className='menu-container'>
                     <i id='menu' className="fa-solid fa-bars"></i>
