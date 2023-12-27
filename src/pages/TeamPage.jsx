@@ -1,11 +1,11 @@
 import React from 'react'
-
-const Team = () => {
+import Team from '../component/Team'
+const TeamPage = () => {
     return (
-        <div>
-            <h1>Team</h1>
-        </div>
+        <>
+            <Team />
+        </>
     )
 }
 
-export default Team
+export default TeamPage

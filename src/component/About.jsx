@@ -48,7 +48,7 @@ const AboutSection = styled.section`
     justify-content: center;
     align-items: center;
     font-family: var(--ff-general); 
-
+    margin: 5rem 0;
         .content-container{
             display: flex;
             justify-content: center;

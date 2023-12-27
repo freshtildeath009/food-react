@@ -1,10 +1,11 @@
 import React from 'react'
+import Menu from '../component/Menu'
 
 const MenuPage = () => {
     return (
-        <div>
-            Menu
-        </div>
+        <>
+            <Menu />
+        </>
     )
 }
 

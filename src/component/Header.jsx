@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Header = () => {
+    const [dropDownMenu, setDropDownMenu] = useState(false)
+    console.log(dropDownMenu);
+    const _handleDropDownMenu = () => {
+        setDropDownMenu(!dropDownMenu)
+    }
+
     return (
         <HeaderNav>
             <nav className='nav-container'>
@@ -15,8 +21,15 @@ const Header = () => {
                     <li><Link to="/about">ABOUT</Link></li>
                     <li><Link to="/service">SERVICE</Link></li>
                     <li><Link to="/menu">MENU</Link></li>
+                    <div className='drop-down-container'>
+                        <button id='btn-pages' onClick={_handleDropDownMenu}>PAGES</button>
+                        <UL className='drop-down-menu-container' show={dropDownMenu}>
+                            <li><Link to="/team">TEAM</Link></li>
+                            <li><Link to="/booking">BOOKING</Link></li>
+                            <li><Link to="/testimonial">TESTIMONIAL</Link></li>
+                        </UL>
+                    </div>
                     <li><Link to="/contact">CONTACT</Link></li>
-                    <li><Link to="/team">TEAM</Link></li>
                 </ul>
                 <div className='menu-container'>
                     <i id='menu' className="fa-solid fa-bars"></i>
@@ -46,7 +59,6 @@ const HeaderNav = styled.header`
             background: var(--bg-200);
             border-radius: 0 0 5px 5px;
             z-index: 1;
-            
         }
         
         .left-container{
@@ -97,6 +109,20 @@ const HeaderNav = styled.header`
             font-size: calc(0.9rem + 2vw);
         }
         
+        .drop-down-container{
+            position: relative;
+        }
+
+       
+
+        #btn-pages{
+            border: none;
+            font-size: (--fs-1);
+            font-weight: var(--fw-600);
+            color: var(--fc-200);
+            background: var(--bg-200);
+        }
+
         @media (max-width: 991px){
             .menu-container{
                 display: block;
@@ -142,6 +168,13 @@ const HeaderNav = styled.header`
                 margin-right: 1rem;
             }
         }
+`
 
-    
+const UL = styled.div`
+    display: ${props => props.show ? 'block' : 'none'};
+    position: fixed;
+    right: 135px;
+    background: var(--bg-200);
+    margin-top: 1.5rem;
+    padding: 2rem 1rem;
 `
