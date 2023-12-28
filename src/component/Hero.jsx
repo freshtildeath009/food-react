@@ -81,13 +81,12 @@ const HeroComponent = styled.section`
             justify-content: center;
             align-items: center;
             overflow-x: clip;
-            min-width: 0px;
+            min-width: 610px;
             min-height: 600px;
-            padding-right: 2rem;
+            padding: 0 2rem 0 0;
         }  
 
         #hero-image{
-            
             height: auto;
             width: 100%;
             animation: rotation 30s infinite linear;
@@ -108,8 +107,9 @@ const HeroComponent = styled.section`
             }
 
             .right-container{
-                min-width: 450px;
-                min-height: 450px
+                min-width: 500px;
+                min-height: 450px;
+                padding: 0 1rem 0 0;
             }
     }
 
