@@ -26,6 +26,11 @@ const ButtonComponent = styled.div`
             font-family: var(--ff-general);
             letter-spacing: var(--ls-100);
             transition: ease-in-out 0.5s;
+            box-shadow: var(--box-shadow-light);
+        }
+
+        #btn:hover{
+            background: var(--bg-400);
         }
 
         @media (max-width: 567px) {

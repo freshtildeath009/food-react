@@ -65,13 +65,15 @@ const FooterSection = styled.footer`
     font-family: var(--ff-general);
     background: var(--bg-200);
     color: var(--fc-100);
-
+    border-radius: 10px 10px 0 0;
+    box-shadow: var(--box-shadow-top);
         .footer-content-container{
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             margin: 5rem 3rem 3rem 3rem;
             gap: 1rem;
+            width: 100%;
         }
 
         .footer-2-container > h4,
@@ -88,7 +90,7 @@ const FooterSection = styled.footer`
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            width: 400px;
+            width: 100%;
         }
 
         .social-media-icon-container{
@@ -168,6 +170,20 @@ const FooterSection = styled.footer`
             border: none;
             border-radius: 5px;
         }
+
+        #sign-up-btn{
+            padding: 0 1rem;
+            position: absolute;
+            right: 0.5rem;
+            top: 0.5rem;
+            bottom: 0.5rem;
+            background: var(--bg-100);
+            color: var(--fc-100);
+            font-weight: var(--fw-600);
+            border: none;
+            border-radius: 5px;
+        }
+
 
         @media(max-width: 991px) {
             .footer-content-container{

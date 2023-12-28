@@ -18,6 +18,7 @@ const Header = () => {
                 </div>
                 <ul className='right-container'>
                     <li><Link to="/">HOME</Link></li>
+                    <li><Link to="/hero">HERO</Link></li>
                     <li><Link to="/about">ABOUT</Link></li>
                     <li><Link to="/service">SERVICE</Link></li>
                     <li><Link to="/menu">MENU</Link></li>
@@ -48,6 +49,7 @@ const HeaderNav = styled.header`
     height: 80px;
     font-family: var(--ff-general);
     background: var(--bg-200);
+    box-shadow: var(--box-shadow);
 
         .nav-container{
             display: flex;
@@ -57,8 +59,9 @@ const HeaderNav = styled.header`
             height: 80px;
             position: fixed;
             background: var(--bg-200);
-            border-radius: 0 0 5px 5px;
+            border-radius: 0 0 10px 10px;
             z-index: 1;
+            box-shadow: var(--box-shadow-light);
         }
         
         .left-container{
@@ -173,8 +176,9 @@ const HeaderNav = styled.header`
 const UL = styled.div`
     display: ${props => props.show ? 'block' : 'none'};
     position: fixed;
-    right: 135px;
+    right: 130px;
     background: var(--bg-200);
     margin-top: 1.5rem;
     padding: 2rem 1rem;
+    border-radius: 0 0 10px 10px;
 `

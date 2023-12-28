@@ -48,6 +48,7 @@ const HeroComponent = styled.section`
             margin: 0 3rem;
             background: rgba(24, 26, 27, 0.8);
             box-shadow: 1px 1px 20px 1px black;
+            overflow-x: clip;
         }   
 
         .left-container{
@@ -79,13 +80,14 @@ const HeroComponent = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow-y: hidden;
-            min-width: 600px;
+            overflow-x: clip;
+            min-width: 0px;
             min-height: 600px;
             padding-right: 2rem;
         }  
 
         #hero-image{
+            
             height: auto;
             width: 100%;
             animation: rotation 30s infinite linear;

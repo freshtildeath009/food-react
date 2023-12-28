@@ -48,7 +48,10 @@ const AboutSection = styled.section`
     justify-content: center;
     align-items: center;
     font-family: var(--ff-general); 
-    margin: 5rem 0;
+    margin: 5rem 3rem;
+    height: 100%;
+    overflow-x: clip;
+
         .content-container{
             display: flex;
             justify-content: center;
@@ -60,10 +63,8 @@ const AboutSection = styled.section`
             display: grid;
             grid-template-columns: repeat(2, 0.9fr);
             grid-template-rows: repeat(2, 0.9fr);
-            width: 80%;
-            margin: 0 0 0 3rem;
-            min-height: 500px;
-            min-width: 500px;
+            min-height: 450px;
+            min-width: 450px;
             gap: 1rem;
         }
 
@@ -77,7 +78,6 @@ const AboutSection = styled.section`
         .item2-photo-container{
             display: flex;
             align-items: flex-end;
-
             .item2{
                 height: 70%;
                 width: 70%;
@@ -100,8 +100,7 @@ const AboutSection = styled.section`
             align-items: flex-start;
             flex-direction: column;
             width: 100%;
-            margin-right: 3rem;
-            padding: 0 5rem 0 0;   
+           
         }
 
         #about-cursive{
@@ -127,7 +126,6 @@ const AboutSection = styled.section`
         }
 
         #about-title{
-            white-space: nowrap;
             font-size: calc(1.025rem + 2vw);
             font-weight: var(--fw-600);
         }
@@ -173,12 +171,14 @@ const AboutSection = styled.section`
         #stats-info{
             white-space: nowrap;
         }
-        @media (max-width: 1199px) and (min-width: 992px) {
+
+        @media  (max-width: 992px) {
+            margin: 5rem 3rem;
             .left-container{
                 width: 0;
                 min-height: 400px;
                 min-width: 400px;
-                margin: 0 0 0 3rem;
+   
                 .item2,
                 .item3{
                     height: 70%;
@@ -187,10 +187,7 @@ const AboutSection = styled.section`
             }
 
             .right-container{
-                width: 600px;
-                margin-right: 1rem;
                 #about-title{
-                    white-space: nowrap;
                     font-size: calc(0.9rem + 2vw);
                     font-weight: var(--fw-600);
                 }
@@ -198,6 +195,7 @@ const AboutSection = styled.section`
         }
 
         @media (max-width: 991px) {
+        
             .content-container{
                 flex-wrap: wrap;
             }
@@ -206,7 +204,6 @@ const AboutSection = styled.section`
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
                 width: 100%;
-                margin: 0 3rem;
                 min-height: 500px;
                 min-width: 500px;
                 .item3,
@@ -217,12 +214,7 @@ const AboutSection = styled.section`
             }
             
             .right-container{
-                width: 100%;
-                margin-right: 0rem;
-                margin: 0 3rem;
-                padding: 0 0rem 0 0;
                 #about-title{
-                    white-space: nowrap;
                     font-size: calc(0.9rem + 2vw);
                     font-weight: var(--fw-600);
                 }
@@ -235,38 +227,29 @@ const AboutSection = styled.section`
 
         @media (max-width: 767px) {
             .left-container{
-                margin: 0 3rem;
                 min-height: 250px;
                 min-width: 250px;
             }
 
-            .right-container{
-                margin: 0 3rem;
-            }
         }
 
         @media screen and (max-width: 576px) {
-            .left-container{
-                margin: 0 2rem;
-            }
-
-            .right-container{
-                margin: 0 2rem;
-            }
-
+            margin: 5rem 2rem;
             .stats-container{
                 flex-wrap: wrap;
                 gap: 1rem;
             }
+
+            .left-container{
+                min-height: 0px;
+                min-width: 0px;
+            }
         }
         
         @media (max-width: 320px) {
-            .left-container{
-                margin: 0 1rem;
-            }
-
-            .right-container{
-                margin: 0 1rem;
+            margin: 5rem 1rem;
+            #about-title{
+                font-size: calc(1.025rem + 2vw);
             }
         }
 

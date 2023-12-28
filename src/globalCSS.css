@@ -31,9 +31,12 @@
   --fc-300: rgb(238, 233, 233);
   --bg-200: rgba(24, 26, 27, 1);
   --bg-100: rgba(218, 165, 32, 1);
+  --bg-400: rgb(248, 184, 23);
 
   /* Box shadow */
+  --box-shadow-light: rgba(0, 0, 0, 0.4) 0px 15px 20px -10px;
   --box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 20px -10px;
+  --box-shadow-top: rgba(0, 0, 0, 0.3) 0px 54px 55px, rgba(0, 0, 0, 0.3) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 * {
@@ -88,7 +91,6 @@ button {
   font: inherit;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */

@@ -4,6 +4,7 @@ import "./globalCSS.css"
 
 // Page routes
 import Footer from "./component/Footer"
+import Hero from "./component/Hero"
 import AboutPage from "./pages/AboutPage"
 import BookingPage from "./pages/BookingPage"
 import ContactPage from "./pages/ContactPage"
@@ -20,6 +21,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/hero" element={<Hero />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/service" element={<ServicesPage />} />
           <Route path="/menu" element={<MenuPage />} />

@@ -14,8 +14,10 @@ const HomePage = () => {
             <Menu />
             <Booking />
             <Team />
+
         </>
     )
 }
 
 export default HomePage
+
