@@ -5,7 +5,7 @@ const Booking = () => {
     return (
         <>
             <BookingSection>
-                <div className='booking-container'>
+                <div className='booking-container animation-reveal'>
                     <div className='booking-left-container'>
                         <img id='booking-image' src="./images/video.jpg" alt="" />
                     </div>

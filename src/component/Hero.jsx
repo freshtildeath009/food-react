@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <HeroComponent>
             <div className='content-container'>
-                <div className='left-container'>
+                <div className='left-container animation-scale'>
                     <h1 id='title'>Enjoy OUR <br /> Delicious Meal</h1>
                     <p id='paragraph'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                     <div className='button-container'>

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Service = () => {
     return (
         <ServicesSection>
-            <div className='content-container'>
+            <div className='content-container delay animation-reveal'>
                 <div className='service-container'>
                     <i id='service-icon' className="fa-solid fa-user item-1"></i>
                     <h1 id='service-title'>Master Chefs</h1>

@@ -18,7 +18,6 @@ const Header = () => {
                 </div>
                 <ul className='right-container'>
                     <li><Link to="/">HOME</Link></li>
-                    <li><Link to="/hero">HERO</Link></li>
                     <li><Link to="/about">ABOUT</Link></li>
                     <li><Link to="/service">SERVICE</Link></li>
                     <li><Link to="/menu">MENU</Link></li>

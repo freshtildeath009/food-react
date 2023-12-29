@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Menu = () => {
     return (
         <MenuSection>
-            <div className='content-container'>
+            <div className='content-container animation-reveal'>
                 <h4 id='menu-cursive'>Food Menu</h4>
                 <h1 id='menu-title'>Most Popular items</h1>
                 <div className='menu-category-container'>

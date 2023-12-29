@@ -158,6 +158,7 @@ const FooterSection = styled.footer`
             padding: 1rem;
             width: 100%;
             border-radius: 5px;
+            outline: none;
         }
 
         #sign-up-btn{

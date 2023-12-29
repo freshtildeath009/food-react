@@ -1,13 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
+import HeroPages from '../component/HeroPages'
 import Service from '../component/Service'
 
 const ServicesPage = () => {
     return (
-        <ServiceDiv>
-            <Service />
-            <Service />
-        </ServiceDiv>
+        <>
+            <HeroPages title="SERVICES" />
+            <ServiceDiv>
+                <Service />
+                <Service />
+            </ServiceDiv>
+        </>
     )
 }
 

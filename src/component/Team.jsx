@@ -5,7 +5,7 @@ const Team = () => {
     return (
         <>
 
-            <TeamSection>
+            <TeamSection className='animation-reveal'>
                 <div className='team-title-container'>
                     <h4 id='team-cursive'>Team Members</h4>
                     <h4 id='team-title'>Our Master Chefs</h4>
@@ -96,7 +96,7 @@ const TeamSection = styled.section`
     margin: 0 3rem;
     font-family: var(--ff-general);
     flex-direction: column;
-    margin: 8rem 3rem 3rem 3rem;
+    margin: 5rem 3rem 3rem 3rem;
 
         .team-container{
             display: flex;

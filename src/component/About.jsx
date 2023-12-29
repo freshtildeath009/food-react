@@ -4,7 +4,7 @@ import Button from "./Button"
 const About = () => {
     return (
         <AboutSection>
-            <div className='content-container'>
+            <div className='content-container animation-reveal'>
                 <div className='left-container'>
                     <img className='big-photo item1' src="./images/about-1.jpg" alt="" />
                     <div className='item2-photo-container'>

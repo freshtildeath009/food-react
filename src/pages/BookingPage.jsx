@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import Booking from '../component/Booking'
-
+import HeroPages from '../component/HeroPages'
 const BookingPage = () => {
     return (
-        <BookingDiv>
-            <Booking />
-        </BookingDiv>
+        <>
+            <HeroPages title="BOOK NOW!" />
+            <BookingDiv>
+                <Booking />
+            </BookingDiv>
+        </>
     )
 }
 
