@@ -20,8 +20,8 @@ function App() {
   const [background, setBackground] = useState(false)
 
   const styles = {
-    backgroundColor: background ? "white" : "black",
-    transition: "ease-in-out 0.5s"
+    backgroundColor: background ? "white" : "var(--bg-200)",
+    transition: "ease-in-out 0.3s"
   }
   function _handleBAckground() {
     if (window.scrollY > 300) {
@@ -59,11 +59,12 @@ const AppContainer = styled.main`
     transform: translateY(0px);
     animation: REVEAL linear both;
     animation-timeline: view(block);
-    animation-range: cover 0% entry 100%;
+    animation-range: cover 0% entry 40%;
     view-timeline-inset: 30%;
     opacity: 0;
     transition: ease 1s;
-    background: black;
+    background: var(--bg-200);
+    border-radius: 10px;
   }
 
   @keyframes REVEAL{

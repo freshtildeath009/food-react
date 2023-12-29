@@ -32,7 +32,7 @@ const HeroComponent = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     color: var(--fc-100);
     font-family: var(--ff-general);
