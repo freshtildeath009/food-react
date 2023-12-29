@@ -167,24 +167,16 @@ const FooterSection = styled.footer`
             top: 0.5rem;
             bottom: 0.5rem;
             background: var(--bg-100);
-            border: none;
-            border-radius: 5px;
-        }
-
-        #sign-up-btn{
-            padding: 0 1rem;
-            position: absolute;
-            right: 0.5rem;
-            top: 0.5rem;
-            bottom: 0.5rem;
-            background: var(--bg-100);
             color: var(--fc-100);
             font-weight: var(--fw-600);
             border: none;
             border-radius: 5px;
+            transition: ease-in-out 0.5s;
         }
 
-
+        #sign-up-btn:hover{
+            background: var(--bg-400);
+        }
         @media(max-width: 991px) {
             .footer-content-container{
                 display: grid;

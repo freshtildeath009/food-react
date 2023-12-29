@@ -63,8 +63,8 @@ const AboutSection = styled.section`
             display: grid;
             grid-template-columns: repeat(2, 0.9fr);
             grid-template-rows: repeat(2, 0.9fr);
-            min-height: 450px;
-            min-width: 450px;
+            min-height: 570px;
+            min-width: 600px;
             gap: 1rem;
         }
 
@@ -72,7 +72,8 @@ const AboutSection = styled.section`
         .small-photo{
             height: 100%;
             width: 100%;
-            border-radius: 5px;    
+            border-radius: 5px;
+            box-shadow: var(--box-shadow-light);   
         }
 
         .item2-photo-container{
@@ -99,8 +100,6 @@ const AboutSection = styled.section`
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            width: 100%;
-           
         }
 
         #about-cursive{
@@ -126,8 +125,9 @@ const AboutSection = styled.section`
         }
 
         #about-title{
-            font-size: calc(1.025rem + 2vw);
+            font-size: calc(0.9rem + 2vw);
             font-weight: var(--fw-600);
+            white-space: nowrap;
         }
 
         #about-paragraph{
@@ -160,7 +160,7 @@ const AboutSection = styled.section`
         .stats-number{
             font-size: calc(1.025rem + 2vw);
             font-weight: var(--fw-600);
-            padding: 0 0.7rem;
+            padding: 0 0.5rem;
         }
 
         .stats-span{
@@ -172,6 +172,12 @@ const AboutSection = styled.section`
             white-space: nowrap;
         }
 
+        @media (max-width: 1200px) {
+            .left-container{
+                min-height: 450px;
+                min-width: 450px;
+            }
+        }
         @media  (max-width: 992px) {
             margin: 5rem 3rem;
             .left-container{

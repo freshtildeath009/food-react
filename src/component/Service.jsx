@@ -47,7 +47,7 @@ const ServicesSection = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 5rem 2rem;
+            margin: 5rem 2rem 0 2rem;
         }
 
         .service-container{
@@ -99,7 +99,7 @@ const ServicesSection = styled.section`
                 "item1 item2"
                 "item3 item4";
                 gap: 1rem;
-                margin: 5rem 2rem;
+                margin: 5rem 2rem 0 2rem;
             }
 
             .item-1{
@@ -126,7 +126,7 @@ const ServicesSection = styled.section`
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
-                margin: 5rem 1rem;
+                margin: 5rem 1rem 0 1rem;
                 
             }
 
@@ -137,7 +137,7 @@ const ServicesSection = styled.section`
 
         @media screen and (max-width: 320px) {
             .content-container{
-                margin: 5rem 0rem;
+                margin: 5rem 0rem 0 0rem;
             }
         }
 `

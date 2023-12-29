@@ -172,10 +172,11 @@ const BookingSection = styled.section`
             font-size: var(--fs-1);
             font-weight: var(--fw-600);
             box-shadow: var(--box-shadow);
+            transition: ease-in-out 0.5s;
         }
 
         #booking-btn:hover{
-            box-shadow: var(--bg-400);
+            background: var(--bg-400);
         }
 
         @media (max-width: 1400px) {
