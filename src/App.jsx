@@ -84,20 +84,27 @@ const AppContainer = styled.main`
 
   .animation-scale{
     transition: ease 2s;
-    animation: SCALE ease-in-out 3s both;
+    animation: SCALE ease-in-out 4s both;
     opacity: 0;
+    position: relative;
+    top: -200px;
+    left: -10px;
   }
 
   @keyframes SCALE{
     0%{
-      display: none;
-      width: 10%;
+      overflow: hidden;
+      width: 0%;
     }
     50%{
       display: block;
       opacity: 0.5;
     }
     100%{
+      overflow: visible;
+      left: 0px;
+      top: 0px;
+      position: relative;
       opacity: 1;
       width: 100%;
     }
