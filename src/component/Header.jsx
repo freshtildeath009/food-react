@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-
+import Button from "../component/Button"
 const Header = () => {
     const [dropDownMenu, setDropDownMenu] = useState(false)
     console.log(dropDownMenu);
@@ -30,6 +30,7 @@ const Header = () => {
                         </UL>
                     </div>
                     <li><Link to="/contact">CONTACT</Link></li>
+                    <Button text="BOOK A TABLE" />
                 </ul>
                 <div className='menu-container'>
                     <i id='menu' className="fa-solid fa-bars"></i>
@@ -90,7 +91,7 @@ const HeaderNav = styled.header`
             font-size: var(--fs-1);
             font-weight: var(--fw-700);
             gap: 1rem;
-            margin-right: 5rem;
+            margin-right: 3rem;
         }
     
         a{
@@ -175,7 +176,7 @@ const HeaderNav = styled.header`
 const UL = styled.div`
     display: ${props => props.show ? 'block' : 'none'};
     position: fixed;
-    right: 130px;
+    right: 277px;
     background: var(--bg-200);
     margin-top: 1.5rem;
     padding: 2rem 1rem;

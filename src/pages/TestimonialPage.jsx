@@ -1,9 +1,12 @@
 import React from 'react'
+import HeroPages from '../component/HeroPages'
+import Testimonial from '../component/Testimonial'
 
 const TestimonialPage = () => {
     return (
         <>
-            <h1>Test</h1>
+            <HeroPages />
+            <Testimonial />
         </>
     )
 }

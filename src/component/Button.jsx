@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Button = () => {
+const Button = (props) => {
+
     return (
         <ButtonComponent>
-            <button id='btn'>BOOK A TABLE &nbsp;<i className="fa-solid fa-arrow-right"></i></button>
+            <button id='btn'>{props.text}{props.space ? props.space : ""} {props.arrow ? props.arrow : ""} </button>
         </ButtonComponent>
     )
 }
@@ -16,7 +17,7 @@ const ButtonComponent = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1rem 2rem;
+            padding: 1rem 1rem;
             border-radius: 5px;
             border: none;
             font-size: var(--fs-1);

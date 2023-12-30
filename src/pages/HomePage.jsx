@@ -5,6 +5,7 @@ import Hero from "../component/Hero"
 import Menu from '../component/Menu'
 import Service from '../component/Service'
 import Team from '../component/Team'
+import Testimonial from '../component/Testimonial'
 const HomePage = () => {
     return (
         <>
@@ -14,6 +15,7 @@ const HomePage = () => {
             <Menu />
             <Booking />
             <Team />
+            <Testimonial />
 
         </>
     )

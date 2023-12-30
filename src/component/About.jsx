@@ -34,7 +34,7 @@ const About = () => {
                         </div>
                     </div>
                     <br />
-                    <Button />
+                    <Button text="READ MORE" />
                 </div>
             </div>
         </AboutSection>

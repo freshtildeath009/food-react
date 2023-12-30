@@ -1,23 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Menu = () => {
+
+    // Food menu category border bottom 
+    const [breakfast, setBreakfast] = useState(true)
+    const [Launch, setLaunch] = useState(false)
+    const [dinner, setDinner] = useState(false)
+
+    let stylesBreakfast = {
+        borderBottom: breakfast ? "4px solid rgba(218, 165, 32, 1)" : ""
+    }
+    let stylesLaunch = {
+        borderBottom: Launch ? "4px solid rgba(218, 165, 32, 1)" : ""
+    }
+    let stylesDinner = {
+        borderBottom: dinner ? "4px solid rgba(218, 165, 32, 1)" : ""
+    }
+    function _handleBreakfastCategory(event) {
+        if (event.target.classList.contains("breakfast")) {
+            setBreakfast(true) // Active
+            setDinner(false)
+            setLaunch(false)
+        }
+    }
+    function _handleLaunchCategory(event) {
+        if (event.target.classList.contains("launch")) {
+            setBreakfast(false)
+            setLaunch(true) // Active
+            setDinner(false)
+        }
+    }
+    function _handleDinnerCategory(event) {
+        if (event.target.classList.contains("dinner")) {
+            setBreakfast(false)
+            setLaunch(false)
+            setDinner(true) // Active
+        }
+    }
+    // Food menu category border bottom END
+
     return (
         <MenuSection>
             <div className='content-container animation-reveal'>
                 <h4 id='menu-cursive'>Food Menu</h4>
                 <h1 id='menu-title'>Most Popular items</h1>
                 <div className='menu-category-container'>
-                    <div id='break-fast' className="menu-category menu">
-                        <i id='menu-icon' className="fa-solid fa-mug-saucer"></i>
+                    <div id='break-fast' className="menu-category menu" style={stylesBreakfast} onClick={_handleBreakfastCategory}>
+                        <i id='menu-icon' className="fa-solid fa-mug-saucer breakfast" ></i>
                         <p id='menu-category-text'>Popular <br /> <span id='food-span'>Breakfast</span></p>
                     </div>
-                    <div id='launch' className="menu-category menu">
-                        <i id='menu-icon' className="fa-solid fa-burger"></i>
+                    <div id='launch' className="menu-category menu " style={stylesLaunch} onClick={_handleLaunchCategory}>
+                        <i id='menu-icon' className="fa-solid fa-burger launch"></i>
                         <p id='menu-category-text'>Special <br /> <span id='food-span'>Launch</span></p>
                     </div>
-                    <div id='dinner' className="menu-category menu">
-                        <i id='menu-icon' class="fa-solid fa-utensils"></i>
+                    <div id='dinner' className="menu-category menu " style={stylesDinner} onClick={_handleDinnerCategory}>
+                        <i id='menu-icon' className="fa-solid fa-utensils dinner"></i>
                         <p id='menu-category-text'>Lovely <br /> <span id='food-span'>Dinner</span></p>
                     </div>
                 </div>
@@ -186,7 +224,8 @@ const MenuSection = styled.section`
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            margin-top: 2rem; 
+            margin-top: 2rem;
+            
         }
 
         .menu-category{
@@ -196,7 +235,7 @@ const MenuSection = styled.section`
             margin: 0 1rem;
             padding: 1rem 0rem;
             cursor: pointer;
-            // border-bottom: 1px solid rgba(24, 26, 27, 0.2);
+            border-bottom: 4px solid transparent; 
         }
 
         .active{
